@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
@@ -12,22 +12,6 @@ const Hero = () => {
   let textItem2 = useRef();
   let textItem3 = useRef();
   let textItem4 = useRef();
-
-  useGSAP(() => {
-    const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-    const container = containerRef.current;
-    container.addEventListener("mousemove", mouseMove);
-
-    gsap.to(".cursor", {
-      x: mousePosition.x,
-      y: mousePosition.y,
-    });
-  }, [mousePosition]);
 
   useGSAP(() => {
     gsap.from(textItem1.current, {
@@ -54,12 +38,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="bg-bg-color h-auto lg:min-h-screen text-black relative overflow-hidden"
-    >
-      <div className="cursor hidden lg:block w-24 h-24 cursor-pointer text-white rounded-full bg-black/70 backdrop-blur-3xl absolute z-0"></div>
-      <section className=" flex flex-col pt-20 lg:pt-30 lg:px-10 md:h-[70%] lg:h-screen text-center gap-5 justify-center items-center wrapper">
+    <div className="bg-bg-color h-auto lg:min-h-screen text-black relative overflow-hidden">
+      <section className=" flex flex-col pt-20 lg:pt-0 lg:px-10 md:h-[70%] lg:h-screen text-center gap-5 justify-center items-center wrapper">
         <div className="flex flex-col lg:gap-6 w-full relative">
           <div className="flex flex-col md:gap-3 text-left md:pt-10 lg:overflow-hidden">
             <span
