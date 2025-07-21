@@ -22,19 +22,17 @@ const Header = () => {
           <a href="#" className='bg-yellow-300 text-nav-color py-1 px-4 rounded-full'>Hire Me</a>
         </nav>
     
-        <nav className={`fixed top-0 ${menuOpen ? "left-0" : "left-[-1000%]"} bg-black text-nav-color w-[80%] shadow-2xl text-2xl md:text-4xl lg:hidden transition-all`} style={{transition: "all 1s ease-in-ou pt-5tlg:"}}>
+        <nav className={`fixed top-0 ${menuOpen ? "left-0" : "left-[-1000%]"} bg-white text-nav-color w-[80%] shadow-2xl text-2xl md:text-4xl lg:hidden transition-all`} style={{transition: "all 1s ease-in-ou pt-5tlg:"}}>
           <ul className='flex flex-col py-15 px-8 gap-8 relative'>
             <li><a href="#">Web Design</a></li>
             <li><a href="#">Brand Design</a></li>
             <li><a href="#">Logos</a></li>
             <li><a href="#">Flyer Design</a></li>
-
-            <button className='absolute top-5 left-[80%] text-close-color cursor-pointer' onClick={() => setMenuOpen(false)}>
-              <IoMdClose size={35}/>
-            </button>
           </ul>
 
-          
+            <button className='absolute top-5 left-[80%] text-close-color cursor-pointer' onClick={() => setMenuOpen(false)} aria-label='A Button that opens the menu'>
+              <IoMdClose size={35}/>
+            </button>
         </nav>
 
         <button onClick={() => setMenuOpen(!menuOpen)} className='lg:hidden'>
