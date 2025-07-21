@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <section className='wrapper max-w-[70%] px-3'>
+    <section className='content-wrapper max-w-[70%] px-3'>
         <div className="cards">
             <div className="card">
                 <div className='w-80 h-50 bg-blue-500'></div>

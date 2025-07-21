@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const BrandingProjects = () => {
   return (
     <section className='bg-black'>
-        <div className='wrapper pb-10'>
+        <div className='content-wrapper pb-10'>
             <ul className="branding-cards mb-5">
                 {brandingData.map((item) => (
                     <li className="card" key={item.id}>
