@@ -4,7 +4,7 @@ import { brandingData } from '../data/main.js'
 const BrandingProjects = () => {
   return (
     <section className='bg-black'>
-        <div className='wrapper'>
+        <div className='content-wrapper'>
             <ul className="branding-cards">
                 {brandingData.map((item) => (
                     <li className="card">

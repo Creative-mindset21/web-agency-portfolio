@@ -1,0 +1,65 @@
+ {/* <nav className='hidden lg:flex gap-10 items-center'>
+          <ul className='flex gap-4'>
+            <li><a href="#" className='opacity-70 hover:opacity-100 transition-all'>Web Design</a></li>
+            <li><a href="#" className='opacity-70 hover:opacity-100 transition-all'>Brand Design</a></li>
+            <li><a href="#" className='opacity-70 hover:opacity-100 transition-all'>Logos</a></li>
+            <li><a href="#" className='opacity-70 hover:opacity-100 transition-all'>Flyer Design</a></li>
+          </ul>
+
+          <a href="#" className='bg-yellow-300 text-nav-color py-1 px-4 rounded-full'>Hire Me</a>
+        </nav> */}
+    
+
+
+
+    import { useEffect, useRef, useState } from 'react';
+
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  return (
+    <div ref={menuRef} className="relative">
+      <button
+        onClick={() => setIsMenuOpen((prev) => !prev)}
+        className="lg:hidden p-2 border rounded"
+      >
+        Menu
+      </button>   
+
+      {isMenuOpen && (
+        <nav className='flex flex-col gap-4 mt-2 bg-white shadow-md p-4 absolute top-full left-0 lg:hidden'>
+          <ul className='flex flex-col gap-2'>
+            <li><a href="#" className='opacity-70 hover:opacity-100 transition-all'>Web Design</a></li>
+            <li><a href="#" className='opacity-70 hover:opacity-100 transition-all'>Brand Design</a></li>
+            <li><a href="#" className='opacity-70 hover:opacity-100 transition-all'>Logos</a></li>
+            <li><a href="#" className='opacity-70 hover:opacity-100 transition-all'>Flyer Design</a></li>
+          </ul>
+
+          <a href="#" className='bg-yellow-300 text-nav-color py-1 px-4 rounded-full'>Hire Me</a>
+        </nav>
+      )}
+
+      {/* Your original desktop nav can still live outside this block if needed */}
+      {/* 
+      <nav className='hidden lg:flex gap-10 items-center'>
+        ...
+      </nav> 
+      */}
+    </div>
+  );
+}

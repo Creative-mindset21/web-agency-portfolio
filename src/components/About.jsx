@@ -3,15 +3,15 @@ import { NavLink } from 'react-router-dom'
 
 const About = () => {
   return (
-    <section className='wrapper py-10 lg:pt-20'>
-        <div className='flex flex-col lg:flex-row items-start justify-between'>
-            <div className='lg:max-w-[25rem] flex flex-col gap-10 md:gap-5'>
-                <h2 className='text-5xl md:text-7xl font-medium'>Not Just A Website.</h2>
-                <p className='text-lg leading-snug md:text-[1.3rem]'>We Build Website that Touches all Emotion. We specialize in making Brands Stand out from the rest of its competition, significantly.</p>
+    <section className='content-wrapper py-10 lg:pt-20'>
+        <div className='flex flex-col justify-center items-center md:flex-row md:items-start md:justify-between'>
+            <div className='lg:max-w-[35rem] flex flex-col gap-10 md:gap-5 font-montserrat'>
+                <h2 className='text-5xl md:text-7xl font-medium '>Not Just A Website.</h2>
+                <p className='text-lg leading-snug lg:text-[1.3rem]'>We Build Website that Touches all Emotion.<br/> We specialize in making Brands Stand out <br/>from the rest of its competition, significantly.</p>
 
-                <div className="flex gap-5">
-                    <NavLink to="#"className="button rounded-lg hidden md:inline-block">See All Projects</NavLink>
-                    <NavLink to="#"className="button bg-black text-white rounded-lg w-full text-center md:w-auto">I NEED A WEBSITE</NavLink>
+                <div className="flex gap-5 text-xs font-medium">
+                    <NavLink to="#"className="button rounded-full hidden md:inline-block">See All Projects</NavLink>
+                    <NavLink to="#"className="button bg-black text-white rounded-full w-full text-center md:w-auto">I NEED A WEBSITE</NavLink>
                 </div>
             </div>
 
