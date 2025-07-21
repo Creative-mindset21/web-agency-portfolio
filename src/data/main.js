@@ -28,4 +28,28 @@ export const brandingData = [
         name: "Sen.eseda",
         imgSrc: main4
     },
+    
+    {
+        id: 5,
+        name: "SusCouture",
+        imgSrc: main1
+    },
+
+    {
+        id: 6,
+        name: "Aloma",
+        imgSrc: main2
+    },
+
+    {
+        id: 7,
+        name: "Players Redemption",
+        imgSrc: main3
+    },
+
+    {
+        id: 8,
+        name: "Sen.eseda",
+        imgSrc: main4
+    },
 ]
