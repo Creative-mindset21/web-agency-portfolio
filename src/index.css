@@ -29,7 +29,7 @@
 
 @layer components {
   .wrapper {
-    max-inline-size: 95%;
+    max-inline-size: 90%;
     margin-inline: auto;
   }
   .content-wrapper {
@@ -41,7 +41,7 @@
     padding-block: 1rem;
     padding-inline: 2rem;
     background: lightblue;
-    border-radius: 100vmax;
+    border-radius: 10px;
   }
 
   .cards {
