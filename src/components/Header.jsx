@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className=' bg-bg-color text-black font-poppins fixed top-0 left-0 right-0'>
-      <div className='flex py-5 lg:p-5 items-center justify-between wrapper'>
+      <div className='flex py-5 lg:py-5 items-center justify-between wrapper'>
         <a href="" className="text-3xl">Creative</a>
         
         <nav className='hidden lg:flex gap-10 items-center'>

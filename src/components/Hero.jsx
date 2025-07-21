@@ -1,5 +1,6 @@
 import { NavLink, Link } from "react-router-dom"
 import About from "./About"
+import Projects from "./Projects"
 
 const Hero = () => {
   return (
@@ -18,6 +19,7 @@ const Hero = () => {
         <div className="mt-10 h-2 bg-black"></div>
 
         <About />
+        <Projects />
     </main>
   )
 }

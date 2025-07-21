@@ -23,7 +23,7 @@
 
 @layer components {
   .wrapper {
-    max-inline-size: 80%;
+    max-inline-size: 85%;
     margin-inline: auto;
   }
 
@@ -34,4 +34,27 @@
     border-radius: 100vmax;
   }
 
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    column-gap: 15rem;
+    row-gap: 2rem;
+    justify-items: center;
+  }
+
+  .card {
+    border: 2px solid greenyellow;
+    padding: 1rem;
+  }
+
+  .card:first-child {
+    border-color: green;
+  }
+
+  .texts {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
