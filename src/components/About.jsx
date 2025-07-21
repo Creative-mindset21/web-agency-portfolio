@@ -11,7 +11,7 @@ const About = () => {
 
                 <div className="flex gap-5 text-xs font-medium">
                     <NavLink to="#"className="button rounded-full hidden md:inline-block">See All Projects</NavLink>
-                    <NavLink to="#"className="button bg-black text-white rounded-[5px] w-full text-center md:w-auto">I NEED A WEBSITE</NavLink>
+                    <NavLink to="#"className="button bg-black text-white rounded-[5px] lg:rounded-full w-full text-center md:w-auto">I NEED A WEBSITE</NavLink>
                 </div>
             </div>
 
