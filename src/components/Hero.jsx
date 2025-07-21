@@ -1,6 +1,7 @@
 import { NavLink, Link } from "react-router-dom"
 import About from "./About"
 import Projects from "./Projects"
+import Branding from "./Branding"
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
 
         <About />
         <Projects />
+        <Branding />
     </main>
   )
 }
