@@ -2,16 +2,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-color: #14213d;
+  --color-bg-color: #fff;
   --color-nav-color: #4B4B4B;
   --color-close-color: #BEBEBE;
   --font-poppins: "Poppins", "sans-serif"
 }
 
+@layer base {
+  h3 {
+    color: #333;
+    font-size: .95rem;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
+
 @layer components {
   .wrapper {
-    max-inline-size: 90%;
+    max-inline-size: 80%;
     margin-inline: auto;
+  }
+
+  .button {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    background: lightblue;
+    border-radius: 100vmax;
   }
 
 }
