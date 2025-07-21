@@ -1,5 +1,5 @@
 import React from 'react'
-import { brandingData } from '../data/data'
+import { brandingData } from '../data/main.js'
 
 const BrandingProjects = () => {
   return (
