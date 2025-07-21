@@ -82,5 +82,5 @@ export const testimonialData = [
         message: "Amazingly talented Brand designer. I really admire his work! I have worked with him and recomended him to my friends too. I Will 100 percent recommended him for website and brand identity design projects.",
         name: "Mad Mix",
         occupation: "Music Producer"
-    }
+    },
 ]

@@ -59,8 +59,8 @@ const About = () => {
                 <h2 ref={htext} className='text-5xl md:text-7xl font-medium lg:text-8xl'>Not Just A Website.</h2>
                 <p ref={ptext} className='text-lg leading-snug lg:text-[1.3rem]'>We Build Website that Touches all Emotion.<br/> We specialize in making Brands Stand out <br/>from the rest of its competition, significantly.</p>
 
-                <div className="flex gap-5  font-medium">
-                    <NavLink to="#"className="button rounded-[5px] hidden md:inline-block border-2 border-black">See All Projects</NavLink>
+                <div className="flex gap-5 text-xs font-medium">
+                    <NavLink to="#"className="button rounded-full hidden md:inline-block">See All Projects</NavLink>
                     <NavLink to="#"className="button bg-black text-white rounded-[5px] w-full text-center md:w-auto">I NEED A WEBSITE</NavLink>
                 </div>
             </div>
