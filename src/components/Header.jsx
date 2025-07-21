@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { MdOutlineMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
+import logo from "../assets/AXEON.svg"
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -20,9 +21,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className='border-neutral-700/80 bg-transparent backdrop-blur-3xl text-black font-poppins fixed top-0 left-0 right-0 z-50 p-1'>
+    <header className=' bg-transparent  text-black font-poppins fixed top-0 left-0 right-0 z-50 p-1'>
       <div className='flex py-5 lg:py-5 items-center justify-between wrapper'>
-        <a href="" className="text-3xl">Creative</a>
+        <a href="" className="text-3xl">
+          <img className='max-w-40 ' src={logo} alt="" />
+        </a>
 
         <div className='flex justify-center items-center gap-10'>
           <a href="#" className='bg-yellow-300 border-2 border-black text-nav-color py-3 px-4 rounded-full mr-8 hidden md:block font-montserrat font-medium'>Hire Me</a>

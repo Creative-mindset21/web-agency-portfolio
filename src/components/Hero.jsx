@@ -1,27 +1,87 @@
 import { NavLink, Link } from "react-router-dom";
-import About from "./About";
-import Projects from "./Projects";
-import Branding from "./Branding";
-import BrandingProjects from "./BrandingProjects";
-import Testimonials from "./Testimonials";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useRef, useState } from "react";
 
 const Hero = () => {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const containerRef = useRef(null);
+
+  let textItem1 = useRef();
+  let textItem2 = useRef();
+  let textItem3 = useRef();
+  let textItem4 = useRef();
+
+  useGSAP(() => {
+    const mouseMove = (e) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY,
+      });
+    };
+    const container = containerRef.current;
+    container.addEventListener("mousemove", mouseMove);
+
+    gsap.to(".cursor", {
+      x: mousePosition.x,
+      y: mousePosition.y,
+    });
+  }, [mousePosition]);
+
+  useGSAP(() => {
+    gsap.from(textItem1.current, {
+      x: 1100,
+      duration: 1,
+      opacity: 1,
+      ease: "power2.inOut",
+    });
+  }, []);
+  useGSAP(() => {
+    gsap.from(textItem2.current, {
+      x: -1100,
+      duration: 1,
+      opacity: 1,
+      ease: "power2.inOut",
+    });
+  }, []);
+  useGSAP(() => {
+    gsap.from(textItem3.current, {
+      duration: 2,
+      opacity: 0,
+      ease: "power2.inOut",
+    });
+  }, []);
+
   return (
-    <main className="bg-bg-color h-auto min-h-screen text-black">
-      <section className=" flex flex-col lg:px-10 md:h-[70%] lg:h-screen text-center gap-5 justify-center items-center wrapper">
+    <div
+      ref={containerRef}
+      className="bg-bg-color h-auto lg:min-h-screen text-black relative overflow-hidden"
+    >
+      <div className="cursor hidden lg:block w-24 h-24 cursor-pointer text-white rounded-full bg-black/70 backdrop-blur-3xl absolute z-0"></div>
+      <section className=" flex flex-col pt-20 lg:pt-30 lg:px-10 md:h-[70%] lg:h-screen text-center gap-5 justify-center items-center wrapper">
         <div className="flex flex-col lg:gap-6 w-full relative">
-          <div className="flex flex-col md:gap-3 text-left md:pt-10">
-            <span className="text-[3.4rem] md:text-[7rem] lg:text-[9rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-24">
+          <div className="flex flex-col md:gap-3 text-left md:pt-10 lg:overflow-hidden">
+            <span
+              ref={textItem1}
+              className="text-[3.1rem] md:text-[7rem] lg:text-[9.5rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-24"
+            >
               Good Designs
             </span>
             <br />
 
-            <span className="text-[3.4rem] md:text-[7rem] md:mt-6 lg:text-[9rem] font-bricolage leading-10 font-bold lg:text-right lg:leading-24">
+            <span
+              ref={textItem3}
+              className="text-[3.1rem] md:text-[7rem] md:mt-6 lg:text-[9.5rem] font-bricolage leading-10 font-bold lg:text-right lg:leading-24"
+            >
               Make Great
             </span>
             <br />
 
-            <span className="text-[3.4rem] md:text-[7rem] md:mt-6 lg:text-[9rem] font-bricolage leading-10  font-bold lg:text-left lg:leading-24">
+            <span
+              ref={textItem2}
+              className="text-[3.1rem] md:text-[7rem] md:mt-6 lg:text-[9.5rem] font-bricolage leading-10  font-bold lg:text-left lg:leading-24"
+            >
               Business
             </span>
           </div>
@@ -49,13 +109,7 @@ const Hero = () => {
         </div>
       </section>
       <div className="mt-20 h-2 bg-black"></div>
-
-      <About />
-      <Projects />
-      <Branding />
-      <BrandingProjects />
-      <Testimonials />
-    </main>
+    </div>
   );
 };
 
