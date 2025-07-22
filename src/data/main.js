@@ -5,6 +5,49 @@ import main4 from "../assets/4/main4.jpg";
 import main5 from "../assets/5/main5.jpg";
 import main6 from "../assets/6/main6.jpg";
 
+import project1 from "../assets/videos-website/image1.png";
+import project2 from "../assets/videos-website/image2.png";
+import project3 from "../assets/videos-website/image3.png";
+import project4 from "../assets/videos-website/image4.png";
+
+import videoProject1 from "../assets/videos-website/video1.mp4";
+
+export const videoProject = {
+  video: videoProject1,
+  name: "Shop Station",
+  url: "https://shopstation.ng/",
+};
+
+export const projects = [
+  {
+    id: 1,
+    img: project1,
+    name: "DBODYNG.",
+    url: "https://dbodyng.shop/",
+  },
+
+  {
+    id: 2,
+    img: project2,
+    name: "Tripple B's",
+    url: "https://tripplebs.com/",
+  },
+
+  {
+    id: 3,
+    img: project3,
+    name: "Bobby Mdiah",
+    url: "https://bobbymediah.com/",
+  },
+
+  {
+    id: 4,
+    img: project4,
+    name: "Learn With Ease",
+    url: "https://www.learnwithease.org/",
+  },
+];
+
 export const brandingData = [
   {
     id: 1,
@@ -44,38 +87,6 @@ export const brandingData = [
 ];
 
 export const testimonialData = [
-  {
-    id: 1,
-    message:
-      "Amazingly talented Brand designer. I really admire his work! I have worked with him and recomended him to my friends too. I Will 100 percent recommended him for website and brand identity design projects.",
-    name: "Mad Mix",
-    occupation: "Music Producer",
-  },
-
-  {
-    id: 2,
-    message:
-      "Amazingly talented Brand designer. I really admire his work! I have worked with him and recomended him to my friends too. I Will 100 percent recommended him for website and brand identity design projects.",
-    name: "Mad Mix",
-    occupation: "Music Producer",
-  },
-
-  {
-    id: 3,
-    message:
-      "Amazingly talented Brand designer. I really admire his work! I have worked with him and recomended him to my friends too. I Will 100 percent recommended him for website and brand identity design projects.",
-    name: "Mad Mix",
-    occupation: "Music Producer",
-  },
-
-  {
-    id: 4,
-    message:
-      "Amazingly talented Brand designer. I really admire his work! I have worked with him and recomended him to my friends too. I Will 100 percent recommended him for website and brand identity design projects.",
-    name: "Mad Mix",
-    occupation: "Music Producer",
-  },
-
   {
     id: 1,
     message:

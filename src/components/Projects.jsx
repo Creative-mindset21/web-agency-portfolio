@@ -1,59 +1,51 @@
-import React from 'react'
+import React from "react";
+import { projects } from "../data/main";
+import { videoProject } from "../data/main";
+import { MdArrowOutward } from "react-icons/md";
 
 const Projects = () => {
   return (
-    <section className='content-wrapper max-w-[70%] px-3'>
-        <div className="cards">
-            <div className="card">
-                <div className='w-80 h-50 bg-blue-500'></div>
-                <div className='texts'>
-                    <p>Shop Station</p>
-                    <a href="#">VISIT WEBSITE</a>
-                </div>
-            </div>
+    <section className="wrapper mt-10">
+      <ul className="cards">
+        {/* VIDEO PROJECT */}
+        <li className="card">
+          <video autoPlay muted loop>
+            <source src={videoProject.video} type="video/mp4" />
+          </video>
 
-            <div className="card">
-                <div className='w-80 h-50 bg-blue-500'></div>
-                <div className='texts'>
-                    <p>Shop Station</p>
-                    <a href="#">VISIT WEBSITE</a>
-                </div>
-            </div>
+          <div className="texts">
+            <p className="text-xl">{videoProject.name}</p>
+            <a
+              href={videoProject.url}
+              className="project-links text-lg"
+              target="_blank"
+            >
+              VISIT WEBSITE
+              <MdArrowOutward size={20} className="hover:transform-" />
+            </a>
+          </div>
+        </li>
 
-            <div className="card">
-                <div className='w-80 h-50 bg-blue-500'></div>
-                <div className='texts'>
-                    <p>Shop Station</p>
-                    <a href="#">VISIT WEBSITE</a>
-                </div>
+        {/* IMAGE PROJECT */}
+        {projects.map((project) => (
+          <li className="card" key={project.id}>
+            <img src={project.img} alt={`Image of ${project.name}`} />
+            <div className="texts">
+              <p className="text-xl">{project.name}</p>
+              <a
+                href={project.url}
+                className="project-links text-lg"
+                target="_blank"
+              >
+                VISIT WEBSITE
+                <MdArrowOutward size={20} />
+              </a>
             </div>
-
-            <div className="card">
-                <div className='w-80 h-50 bg-blue-500'></div>
-                <div className='texts'>
-                    <p>Shop Station</p>
-                    <a href="#">VISIT WEBSITE</a>
-                </div>
-            </div>
-
-            <div className="card">
-                <div className='w-80 h-50 bg-blue-500'></div>
-                <div className='texts'>
-                    <p>Shop Station</p>
-                    <a href="#">VISIT WEBSITE</a>
-                </div>
-            </div>
-
-            <div className="card">
-                <div className='w-80 h-50 bg-blue-500'></div>
-                <div className='texts'>
-                    <p>Shop Station</p>
-                    <a href="#">VISIT WEBSITE</a>
-                </div>
-            </div>
-        </div>
+          </li>
+        ))}
+      </ul>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
