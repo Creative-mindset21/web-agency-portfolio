@@ -1,12 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-const items = [
-  "Creative Studios",
-  "Website Design",
-  "Logo Design",
-  "Branding",
-];
+const items = ["Creative Studios", "Website Design", "Logo Design", "Branding"];
 
 const GsapInfiniteSlider = () => {
   const sliderRef = useRef(null);
@@ -21,8 +16,12 @@ const GsapInfiniteSlider = () => {
     // Get total width of all items
     const totalWidth = slider.scrollWidth / 2;
 
-    slider.addEventListener("mouseenter", () => gsap.to(slider, { timeScale: 0 }));
-    slider.addEventListener("mouseleave", () => gsap.to(slider, { timeScale: 1 }));
+    slider.addEventListener("mouseenter", () =>
+      gsap.to(slider, { timeScale: 0 })
+    );
+    slider.addEventListener("mouseleave", () =>
+      gsap.to(slider, { timeScale: 1 })
+    );
 
     // GSAP infinite scroll animation
     gsap.fromTo(
@@ -42,7 +41,7 @@ const GsapInfiniteSlider = () => {
       {/* Slider */}
       <div
         ref={sliderRef}
-        className="flex gap-12 whitespace-nowrap text-4xl md:text-7xl font-bold text-black/80 font-bricolage"
+        className="flex gap-12 whitespace-nowrap text-4xl md:text-7xl xl:text-8xl font-bold text-black/80 font-bricolage"
       >
         {items.map((item, i) => (
           <div key={i} className="min-w-max">
