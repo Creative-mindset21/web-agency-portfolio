@@ -127,7 +127,7 @@ export const testimonialData = [
   {
     id: 1,
     message:
-      "Amazingly talented Brand designer. I really admire his work! I have worked with him and recomended him to my friends too. I Will 100 percent recommended him for website and brand identity design projects.",
+      "An exceptionally talented brand designer! I admire his work and have recommended him to friends. I wholeheartedly endorse him for website and brand identity projects.",
     name: "Mad Mix",
     occupation: "Music Producer",
   },
@@ -135,25 +135,17 @@ export const testimonialData = [
   {
     id: 2,
     message:
-      "Amazingly talented Brand designer. I really admire his work! I have worked with him and recomended him to my friends too. I Will 100 percent recommended him for website and brand identity design projects.",
-    name: "Mad Mix",
-    occupation: "Music Producer",
+      "I’m thrilled with the website you built! It perfectly captures my brand and is user-friendly. Your attention to detail and creativity truly set you apart. Highly recommended!",
+    name: "Olasegun Thomas",
+    occupation: "E-Commerce Brand",
   },
 
   {
     id: 3,
     message:
-      "Amazingly talented Brand designer. I really admire his work! I have worked with him and recomended him to my friends too. I Will 100 percent recommended him for website and brand identity design projects.",
-    name: "Mad Mix",
-    occupation: "Music Producer",
-  },
-
-  {
-    id: 4,
-    message:
-      "Amazingly talented Brand designer. I really admire his work! I have worked with him and recomended him to my friends too. I Will 100 percent recommended him for website and brand identity design projects.",
-    name: "Mad Mix",
-    occupation: "Music Producer",
+      "Creative Studios has been a significant inspiration in my career. I can confidently say they are one of the best recommendations for website design projects.",
+    name: "Johnson Akinsule",
+    occupation: "Artist",
   },
 ];
 

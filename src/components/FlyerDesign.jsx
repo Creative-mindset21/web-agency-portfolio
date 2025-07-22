@@ -10,7 +10,7 @@ const FlyerDesign = () => {
           {images.map((image, index) => (
             <li
               key={index}
-              className="opacity-80 hover:opacity-100 transition-all"
+              className="lg:opacity-80 hover:opacity-100 transition-all"
             >
               <img src={image.img} alt="Flyer Design Images" />
             </li>

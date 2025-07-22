@@ -63,7 +63,7 @@ const Header = () => {
                   <NavLink to={"#"}>Logos</NavLink>
                 </li> */}
                 <li>
-                  <a href="#">Flyer Design</a>
+                  <NavLink to={"/flyers"}>Flyer Design</NavLink>
                 </li>
               </ul>
 

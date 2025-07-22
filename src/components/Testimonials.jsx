@@ -7,12 +7,11 @@ const Testimonials = () => {
         <h2 className="text-5xl xl:text-7xl font-medium mb-8">
           Real Clients Testimonials
         </h2>
-        <h3 className="xl:text-lg text-white">WRITE US A REVIEW</h3>
 
         <ul className="testimonial-cards">
           {testimonialData.map((item) => (
             <li className="testimonial-card" key={item.id}>
-              <p>{item.message}</p>
+              <p className="text-lg">{item.message}</p>
 
               <div className="flex flex-col gap-1 mt-2">
                 <h2 className="font-bold text-lg">{item.name}</h2>

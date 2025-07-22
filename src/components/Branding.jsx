@@ -69,17 +69,16 @@ const Branding = () => {
       id="branding"
     >
       <div className="flex flex-col lg:flex-row items-start justify-between wrapper py-10 mt-10 lg:pt-20">
-        <div className="lg:max-w-[30rem] flex flex-col gap-10 md:gap-5">
+        <div className="lg:max-w-[30rem] xl:max-w-[35rem] flex flex-col gap-10 md:gap-5">
           <h2
             ref={htext}
-            className="text-5xl md:text-7xl font-medium lg:text-[5rem]"
+            className="text-5xl md:text-7xl font-medium lg:text-[4rem] xl:text-[5rem]"
           >
-            These Brands Are Gold.
+            These Brands Shine Bright.
           </h2>
           <p ref={ptext} className="text-lg leading-snug lg:text-[1.3rem]">
-            We Design Feelings, We prepare brands, and We do all that from
-            scratch. We will practically make your customers adjust to your
-            price with practical visual concepts.
+            We Design Experiences. We Build Brands from the Ground Up. Our
+            visual concepts help your customers align with your pricing.
           </p>
 
           <div className="flex gap-5 font-medium">
@@ -105,7 +104,7 @@ const Branding = () => {
         >
           <div>
             <h3>EXPERIENCE</h3>
-            <h4>Since 2012</h4>
+            <h4>Since 2015</h4>
           </div>
 
           <div>

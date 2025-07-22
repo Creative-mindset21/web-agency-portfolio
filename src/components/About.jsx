@@ -54,17 +54,19 @@ const About = () => {
   return (
     <section className="section-box-1 wrapper py-10 lg:pt-20" id="about">
       <div className="flex flex-col justify-center md:flex-row md:items-start md:justify-between">
-        <div className="lg:max-w-[35rem] flex flex-col gap-10 md:gap-5 font-montserrat">
+        <div className="lg:max-w-[34rem] flex flex-col gap-10 md:gap-5 font-montserrat">
           <h2
             ref={htext}
-            className="text-5xl md:text-7xl font-medium lg:text-8xl"
+            className="text-5xl md:text-7xl font-medium lg:text-6.5xl"
           >
-            Not Just A Website.
+            More Than Just a Website.
           </h2>
           <p ref={ptext} className="text-lg leading-snug lg:text-[1.3rem]">
-            We Build Website that Touches all Emotion.
-            <br /> We specialize in making Brands Stand out <br />
-            from the rest of its competition, significantly.
+            We create websites that resonate with all emotions.
+            <br />
+            We specialize in making brands{" "}
+            <span className="font-bold">stand out</span> significantly from the
+            competition.
           </p>
 
           <div className="flex gap-5 text-xs font-medium">
@@ -90,7 +92,7 @@ const About = () => {
         >
           <div>
             <h3>EXPERIENCE</h3>
-            <h4>Since 2015</h4>
+            <h4>Since 2020</h4>
           </div>
 
           <div>
