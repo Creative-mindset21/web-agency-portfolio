@@ -1,8 +1,8 @@
-//import main1 from "../assets/main1/main1.jpg";
+import main1 from "../assets/main1/main1.JPG";
 import main2 from "../assets/main2/main2.jpg";
 import main3 from "../assets/main3/main3.jpg";
 import main4 from "../assets/main4/main4.jpg";
-import main5 from "../assets/main5/main5.jpg";
+import main5 from "../assets/main5/main5.JPG";
 import main6 from "../assets/main6/main6.jpg";
 
 import project1 from "../assets/videos-website/image1.png";
@@ -85,11 +85,11 @@ export const projects = [
 ];
 
 export const brandingData = [
-  // {
-  //   id: 1,
-  //   name: "SusCouture",
-  //   imgSrc: main1,
-  // },
+  {
+    id: 1,
+    name: "SusCouture",
+    imgSrc: main1,
+  },
 
   {
     id: 2,
