@@ -50,14 +50,14 @@ const Header = () => {
                 menuOpen
                   ? "right-1 md:right-1 top-2 opacity-100"
                   : "right-[-1000%] opacity-0"
-              }  bg-yellow-300 text-black font-medium md:w-[50%] lg:w-[30%] w-[80%] shadow-2xl text-md md:text-4xl transition-all duration-500 ease-in-out pt-5 rounded-3xl`}
+              }  bg-yellow-300 text-black font-medium md:w-[50%] lg:w-[30%] w-[80%] shadow-2xl text-2xl md:text-4xl transition-all duration-500 ease-in-out pt-5 rounded-3xl`}
             >
               <ul className="flex flex-col py-15 px-8 gap-8 relative font-montserrat">
                 <li>
-                  <a href="/">Web Design</a>
+                  <a href="#about">Web Design</a>
                 </li>
                 <li>
-                  <a href="/">Brand Design</a>
+                  <a href="#branding">Brand Design</a>
                 </li>
                 {/* <li>
                   <NavLink to={"#"}>Logos</NavLink>

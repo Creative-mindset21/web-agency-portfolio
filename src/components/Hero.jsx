@@ -56,7 +56,7 @@ const Hero = () => {
           <div className="flex flex-col md:gap-3 text-left md:pt-10 lg:overflow-hidden">
             <span
               ref={textItem1}
-              className="text-[3.4rem] md:text-[7rem] lg:text-[6.7rem] xl:text-[13rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-40 flex items-center gap-4"
+              className="text-[3.2rem] md:text-[7rem] lg:text-[6.7rem] xl:text-[13rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-40 flex items-center gap-4"
             >
               Great Designs{" "}
               <a href="#about" className="hidden lg:inline-block">
