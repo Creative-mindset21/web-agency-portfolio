@@ -54,10 +54,10 @@ const Header = () => {
             >
               <ul className="flex flex-col py-15 px-8 gap-8 relative font-montserrat">
                 <li>
-                  <a href="#about">Web Design</a>
+                  <a href="/">Web Design</a>
                 </li>
                 <li>
-                  <a href="#branding">Brand Design</a>
+                  <a href="/">Brand Design</a>
                 </li>
                 {/* <li>
                   <NavLink to={"#"}>Logos</NavLink>
