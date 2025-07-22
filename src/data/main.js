@@ -1,9 +1,9 @@
-import main1 from "../assets/1/main1.jpg";
-import main2 from "../assets/2/main2.jpg";
-import main3 from "../assets/3/main3.jpg";
-import main4 from "../assets/4/main4.jpg";
-import main5 from "../assets/5/main5.jpg";
-import main6 from "../assets/6/main6.jpg";
+import main1 from "../assets/main1/main1.jpg";
+import main2 from "../assets/main2/main2.jpg";
+import main3 from "../assets/main3/main3.jpg";
+import main4 from "../assets/main4/main4.jpg";
+import main5 from "../assets/main5/main5.jpg";
+import main6 from "../assets/main6/main6.jpg";
 
 import project1 from "../assets/videos-website/image1.png";
 import project2 from "../assets/videos-website/image2.png";
@@ -20,7 +20,6 @@ import normal5 from "../assets/normal/normal5.jpg";
 import normal6 from "../assets/normal/normal6.jpg";
 import normal7 from "../assets/normal/normal7.jpg";
 
-import long1 from "../assets/long/long1.jpg";
 import long2 from "../assets/long/long2.jpg";
 import long3 from "../assets/long/long3.jpg";
 import long4 from "../assets/long/long4.jpg";
