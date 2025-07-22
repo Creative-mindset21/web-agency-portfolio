@@ -3,7 +3,7 @@ import main2 from "../assets/main2/main2.jpg";
 import main3 from "../assets/main3/main3.jpg";
 import main4 from "../assets/main4/main4.jpg";
 import main5 from "../assets/main5/main5.JPG";
-import main6 from "../assets/main6/main6.jpg";
+import main6 from "../assets/main6/main6.JPG";
 
 import project1 from "../assets/videos-website/image1.png";
 import project2 from "../assets/videos-website/image2.png";
@@ -17,8 +17,8 @@ import normal2 from "../assets/normal/normal2.jpg";
 import normal3 from "../assets/normal/normal3.jpg";
 import normal4 from "../assets/normal/normal4.jpg";
 import normal5 from "../assets/normal/normal5.jpg";
-import normal6 from "../assets/normal/normal6.jpg";
-import normal7 from "../assets/normal/normal7.jpg";
+import normal6 from "../assets/normal/normal6.JPG";
+import normal7 from "../assets/normal/normal7.JPG";
 
 import long2 from "../assets/long/long2.jpg";
 import long3 from "../assets/long/long3.jpg";
@@ -45,8 +45,8 @@ import long23 from "../assets/long/long23.jpg";
 import long24 from "../assets/long/long24.jpg";
 import long25 from "../assets/long/long25.jpg";
 import long26 from "../assets/long/long26.jpg";
-import long27 from "../assets/long/long27.jpg";
-import long28 from "../assets/long/long28.jpg";
+import long27 from "../assets/long/long27.JPG";
+import long28 from "../assets/long/long28.JPG";
 
 export const videoProject = {
   video: videoProject1,
