@@ -5,7 +5,6 @@ import Branding from "../components/Branding"
 import BrandingProjects from "../components/BrandingProjects"
 import Testimonials from "../components/Testimonials"
 import Hero from '../components/Hero'
-import GsapInfiniteSlider from '../components/InfiniteSlider'
 
 function Home() {
   return (
@@ -15,10 +14,9 @@ function Home() {
         <Projects />
         <Branding />
         <BrandingProjects />
-        <GsapInfiniteSlider/>
         <Testimonials />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
