@@ -16,12 +16,12 @@ const BrandingProjects = () => {
             </li>
           ))}
         </ul>
-        <NavLink
-          to="#"
+        <a
+          href="https://api.whatsapp.com/send/?phone=447988537395&text=Hello%2C+%2ACreativeStudios%2A+I+am+Coming+From+Your+Website%2C+I+Need+A+Design.+&type=phone_number&app_absent=0"
           className="py-2 px-6 bg-transparent text-white flex justify-center rounded-md border-2 border-solid lg:hidden"
         >
           Book A Call
-        </NavLink>
+        </a>
       </div>
     </section>
   );
