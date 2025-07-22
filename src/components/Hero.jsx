@@ -39,7 +39,7 @@ const Hero = () => {
 
   return (
     <div className="bg-bg-color h-auto lg:min-h-screen text-black relative overflow-hidden">
-      <section className=" flex flex-col pt-20 lg:pt-0 lg:px-10 h-screen text-center gap-5 justify-center items-center wrapper">
+      <section className=" flex flex-col pt-20 lg:pt-0 lg:px-10 h-screen text-center gap-5 justify-center items-center wrapper lg:max-w-[90%]">
         <div className="flex flex-col lg:gap-6 w-full relative">
           <div className="flex flex-col md:gap-3 text-left md:pt-10 lg:overflow-hidden">
             <span
