@@ -1,4 +1,4 @@
-import main1 from "../assets/main1/main1.jpg";
+//import main1 from "../assets/main1/main1.jpg";
 import main2 from "../assets/main2/main2.jpg";
 import main3 from "../assets/main3/main3.jpg";
 import main4 from "../assets/main4/main4.jpg";
@@ -85,11 +85,11 @@ export const projects = [
 ];
 
 export const brandingData = [
-  {
-    id: 1,
-    name: "SusCouture",
-    imgSrc: main1,
-  },
+  // {
+  //   id: 1,
+  //   name: "SusCouture",
+  //   imgSrc: main1,
+  // },
 
   {
     id: 2,
