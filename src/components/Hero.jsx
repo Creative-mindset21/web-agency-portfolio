@@ -39,12 +39,12 @@ const Hero = () => {
 
   return (
     <div className="bg-bg-color h-auto lg:min-h-screen text-black relative overflow-hidden">
-      <section className=" flex flex-col pt-20 lg:pt-0 lg:px-10 md:h-[70%] lg:h-screen text-center gap-5 justify-center items-center wrapper">
+      <section className=" flex flex-col pt-20 lg:pt-0 lg:px-10 h-screen text-center gap-5 justify-center items-center wrapper">
         <div className="flex flex-col lg:gap-6 w-full relative">
           <div className="flex flex-col md:gap-3 text-left md:pt-10 lg:overflow-hidden">
             <span
               ref={textItem1}
-              className="text-[3.1rem] md:text-[7rem] lg:text-[9.5rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-24"
+              className="text-[3.4rem] md:text-[7rem] lg:text-[9.5rem] xl:text-[13rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-40"
             >
               Good Designs
             </span>
@@ -52,7 +52,7 @@ const Hero = () => {
 
             <span
               ref={textItem3}
-              className="text-[3.1rem] md:text-[7rem] md:mt-6 lg:text-[9.5rem] font-bricolage leading-10 font-bold lg:text-right lg:leading-24"
+              className="text-[4rem] md:text-[7rem] md:mt-6 xl:pr-30 lg:text-[9.5rem] xl:text-[13rem] font-bricolage leading-10 font-bold lg:text-right lg:leading-24 text-yellow-400"
             >
               Make Great
             </span>
@@ -60,20 +60,20 @@ const Hero = () => {
 
             <span
               ref={textItem2}
-              className="text-[3.1rem] md:text-[7rem] md:mt-6 lg:text-[9.5rem] font-bricolage leading-10  font-bold lg:text-left lg:leading-24"
+              className="text-[4rem] md:text-[7rem] md:mt-6 lg:text-[9.5rem] xl:text-[13rem] font-bricolage leading-10 font-bold lg:text-left lg:leading-40"
             >
               Business
             </span>
           </div>
-          <div className="flex flex-col md:flex-row text-left mt-5 md:mt-15 lg:absolute bottom-0 right-0">
-            <span className="text-sm max-w-100 md:text-[1.25rem] tracking-widest lg:text-md font-montserrat">
+          <div className="flex flex-col md:flex-row text-left mt-5 md:mt-15 lg:absolute bottom-0 right-0 ">
+            <span className="text-base max-w-100 md:text-[1.25rem] tracking-widest lg:text-md font-montserrat">
               We design and develop for brands. We are skilled at making complex
               ideas plain and simple.
             </span>
           </div>
         </div>
 
-        <div className="wrapper flex flex-col md:flex-row jusfity-center gap-5 lg:items-center font-montserrat text-xs font-medium w-full">
+        <div className="wrapper flex flex-col md:flex-row justify-center gap-5 lg:items-center font-montserrat text-xs font-medium w-full">
           <NavLink
             to="#"
             className="button w-full border-2 border-solid md:hidden"

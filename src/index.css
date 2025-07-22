@@ -11,6 +11,10 @@
   --transition: all 0.3s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   h3 {
     color: #333;
@@ -47,26 +51,47 @@
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    column-gap: 15rem;
+    grid-template-columns: 1fr;
+    column-gap: 1.5rem;
     row-gap: 2rem;
     justify-items: center;
   }
 
   .card {
-    border: 2px solid greenyellow;
-    padding: 1rem;
+    padding: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 1px 4px;
+    transition: var(--transition);
   }
 
-  .card:first-child {
-    border-color: green;
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 1px 4px;
   }
 
   .texts {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    padding-inline: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .project-links {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .project-links:hover {
+    color: oklch(85.2% 0.199 91.936);
+  }
+
+  .project-links svg,
+  .project-links {
+    transition: var(--transition);
+  }
+
+  .project-links:hover svg {
+    transform: translateY(-5px);
   }
 
   .branding-cards {
@@ -111,6 +136,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     .branding-cards {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
