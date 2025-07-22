@@ -51,15 +51,15 @@ const Hero = () => {
         <source src={videoFile} type="video/mp4" />
       </video>
 
-      <section className=" flex flex-col pt-20 lg:pt-0 lg:px-10 h-screen text-center gap-5 justify-center items-center wrapper lg:max-w-[90%]">
+      <section className=" flex flex-col pt-20 h-auto lg:pt-0 lg:px-10 lg:min-h-screen text-center gap-5 justify-center items-center wrapper lg:max-w-[90%]">
         <div className="flex flex-col lg:gap-6 w-full relative">
-          <div className="flex flex-col md:gap-3 text-left md:pt-10 lg:overflow-hidden">
+          <div className="flex flex-col md:gap-3 text-left md:pt-10 lg:overflow-hidden relative">
             <span
               ref={textItem1}
-              className="text-[3.2rem] md:text-[7rem] lg:text-[6.7rem] xl:text-[13rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-40 flex items-center gap-4"
+              className="text-[3.2rem] md:text-[7rem] lg:text-[6.7rem] xl:text-[9rem] 2xl:text-[13rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-40 flex items-center gap-4"
             >
               Great Designs{" "}
-              <a href="#about" className="hidden lg:inline-block">
+              <a href="#about" className="hidden lg:inline-block lg:right-0 lg:absolute">
                 <video
                   autoPlay
                   muted
@@ -74,22 +74,24 @@ const Hero = () => {
 
             <span
               ref={textItem3}
-              className="text-[4rem] md:text-[7rem] md:mt-6 xl:pr-30 lg:text-[8rem] xl:text-[13rem] font-bricolage leading-10 font-bold lg:text-right lg:leading-24 text-yellow-400 flex items-center gap-30"
+              className="text-[4rem] md:text-[7rem] md:mt-6 xl:pr-30 lg:text-[7rem] xl:text-[9rem] font-bricolage leading-10 font-bold lg:text-right lg:leading-24 text-yellow-400 flex items-center gap-30 2xl:text-[13rem] xl:pt-28 2xl:pt-48"
             >
-              <a href="#about" className="hidden lg:inline-block">
+              <a href="#about" className="hidden lg:inline-block lg:left-0 lg:absolute">
                 <img
                   src={image1}
                   alt=""
                   className="w-70 xl:w-100  hover:scale-110 transition-all"
                 />
               </a>
+              <span className="lg:right-0 lg:absolute">
               Lead to
+              </span>
             </span>
             <br />
 
             <span
               ref={textItem2}
-              className="text-[4rem] md:text-[7rem] md:mt-6 lg:text-[6.9rem] xl:text-[13rem] font-bricolage leading-10 font-bold lg:text-left lg:leading-40"
+              className="text-[4rem] md:text-[7rem] md:mt-6 lg:text-[6.9rem] xl:text-[9rem] font-bricolage leading-10 font-bold lg:text-left lg:leading-40 2xl:text-[13rem] xl:pt-28 2xl:pt-48"
             >
               Success
             </span>

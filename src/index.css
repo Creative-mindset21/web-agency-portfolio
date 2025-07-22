@@ -148,7 +148,7 @@
   }
 
   .contact {
-    @apply flex items-center justify-center lg:justify-start gap-3 hover:bg-yellow-400 font-medium transition-colors text-xl border-yellow-400 border-2 py-3 px-5 rounded-[5px] lg:rounded-full w-[90%] lg:w-auto;
+    @apply flex items-center justify-center lg:justify-start gap-3 hover:bg-yellow-400 font-medium transition-colors text-xl md:text-sm border-yellow-400 border-2 py-3 px-5 rounded-[5px] lg:rounded-full w-[90%] lg:w-auto;
   }
 
   .footer {
