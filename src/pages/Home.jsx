@@ -7,10 +7,13 @@ import Testimonials from "../components/Testimonials";
 import Hero from "../components/Hero";
 import GsapInfiniteSlider from "../components/InfiniteSlider";
 import Connect from "../components/Connect";
+import Contact from "../components/Contact";
+import Header from "../components/Header";
 
 function Home() {
   return (
     <>
+      <Header />
       <Hero />
       <About />
       <Projects />
@@ -19,6 +22,7 @@ function Home() {
       <GsapInfiniteSlider />
       <Testimonials />
       <Connect />
+      <Contact />
     </>
   );
 }

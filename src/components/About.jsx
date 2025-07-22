@@ -68,18 +68,19 @@ const About = () => {
           </p>
 
           <div className="flex gap-5 text-xs font-medium">
-            <NavLink
+            {/* <NavLink
               to="#"
               className="button rounded-full hidden md:inline-block"
             >
               See All Projects
-            </NavLink>
-            <NavLink
-              to="#"
-              className="button bg-black text-white rounded-[5px] w-full text-center md:w-auto"
+            </NavLink> */}
+            <a
+              href="https://api.whatsapp.com/send/?phone=447988537395&text=Hello%2C+%2ACreativeStudios%2A+I+am+Coming+From+Your+Website%2C+I+Need+A+Design.+&type=phone_number&app_absent=0"
+              className="button bg-black text-white text-base rounded-[5px] w-full text-center md:w-auto"
+              target="_blank"
             >
               I NEED A WEBSITE
-            </NavLink>
+            </a>
           </div>
         </div>
 

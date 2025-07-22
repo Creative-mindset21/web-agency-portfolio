@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
+import video1 from "../assets/videos-website/video1.mp4";
+import image1 from "../assets/videos-website/image3.png";
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -44,16 +46,33 @@ const Hero = () => {
           <div className="flex flex-col md:gap-3 text-left md:pt-10 lg:overflow-hidden">
             <span
               ref={textItem1}
-              className="text-[3.4rem] md:text-[7rem] lg:text-[9.5rem] xl:text-[13rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-40"
+              className="text-[3.4rem] md:text-[7rem] lg:text-[9.5rem] xl:text-[13rem] font-bricolage leading-10 mt-3 font-bold lg:text-left lg:leading-40 flex items-center gap-4"
             >
-              Good Designs
+              Good Designs{" "}
+              <a href="#about" className="hidden lg:inline-block">
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  className="w-40 hover:scale-110 transition-all"
+                >
+                  <source src={video1} type="video/mp4" />
+                </video>
+              </a>
             </span>
             <br />
 
             <span
               ref={textItem3}
-              className="text-[4rem] md:text-[7rem] md:mt-6 xl:pr-30 lg:text-[9.5rem] xl:text-[13rem] font-bricolage leading-10 font-bold lg:text-right lg:leading-24 text-yellow-400"
+              className="text-[4rem] md:text-[7rem] md:mt-6 xl:pr-30 lg:text-[9.5rem] xl:text-[13rem] font-bricolage leading-10 font-bold lg:text-right lg:leading-24 text-yellow-400 flex items-center gap-30"
             >
+              <a href="#about" className="hidden lg:inline-block">
+                <img
+                  src={image1}
+                  alt=""
+                  className="w-70  hover:scale-110 transition-all"
+                />
+              </a>
               Make Great
             </span>
             <br />
@@ -88,7 +107,7 @@ const Hero = () => {
           </NavLink>
         </div>
       </section>
-      <div className="mt-20 h-2 bg-black"></div>
+      <div className="mt-20 h-2 bg-gray-300"></div>
     </div>
   );
 };

@@ -37,11 +37,11 @@ const GsapInfiniteSlider = () => {
   }, []);
 
   return (
-    <div className="relative w-full overflow-hidden bg-gray-white py-4">
+    <div className="relative w-full overflow-hidden bg-yellow-400 py-4">
       {/* Slider */}
       <div
         ref={sliderRef}
-        className="flex gap-12 whitespace-nowrap text-4xl md:text-7xl xl:text-8xl font-bold text-black/80 font-bricolage"
+        className="flex gap-12 whitespace-nowrap text-4xl md:text-7xl xl:text-8xl font-bold text-white font-bricolage"
       >
         {items.map((item, i) => (
           <div key={i} className="min-w-max">

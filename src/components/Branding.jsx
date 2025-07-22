@@ -84,17 +84,18 @@ const Branding = () => {
 
           <div className="flex gap-5 font-medium">
             <NavLink
-              to="#"
+              to="/flyers"
               className="button rounded-lg hidden md:inline-block text-black"
             >
               See All Projects
             </NavLink>
-            <NavLink
-              to="#"
+            <a
+              href="https://api.whatsapp.com/send/?phone=447988537395&text=Hello%2C+%2ACreativeStudios%2A+I+am+Coming+From+Your+Website%2C+I+Need+A+Design.+&type=phone_number&app_absent=0"
               className="button bg-white text-black rounded-lg w-full text-center md:w-auto"
+              target="_blank"
             >
               I NEED A DESIGN
-            </NavLink>
+            </a>
           </div>
         </div>
 

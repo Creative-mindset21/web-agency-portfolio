@@ -13,7 +13,7 @@ const Connect = () => {
 
         <div className="flex flex-col gap-1">
           <h2 className="text-3xl">Say Connect</h2>
-          <h3 className="text-3xl">info@creativestudios.com</h3>
+          <h3 className="text-3xl">creativestudios210@gmail.com</h3>
           <p className="max-w-[30rem]">
             We are not just a Design Agency, we are originally branded to
             deliver high end quality designs.

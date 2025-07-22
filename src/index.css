@@ -137,6 +137,27 @@ html {
       0 1px 2px -1px rgb(255 255 255 / 0.8);
   }
 
+  .contact {
+    @apply flex items-center justify-center lg:justify-start gap-3 hover:bg-yellow-400 font-medium transition-colors text-xl border-yellow-400 border-2 py-3 px-5 rounded-[5px] lg:rounded-full w-[90%] lg:w-auto;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 4rem;
+    gap: 3rem;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .images img {
+    box-shadow: rgba(0, 0, 0, 1) 0px 1px 4px;
+  }
+
   @media screen and (min-width: 768px) {
     .cards {
       grid-template-columns: repeat(3, 1fr);
@@ -153,12 +174,21 @@ html {
     .testimonial-card {
       max-inline-size: 25rem;
     }
+
+    .footer {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   @media screen and (min-width: 1280px) {
     .wrapper,
     .content-wrapper {
       max-inline-size: 85%;
+    }
+
+    .branding-cards {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
     }
   }
 }
