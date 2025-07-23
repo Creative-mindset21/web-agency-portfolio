@@ -41,15 +41,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="bg-bg-color h-auto lg:min-h-screen text-black relative overflow-hidden">
-      <video
-        className="absolute top-0 bottom-0 left-0 right-0 w-full h-full object-cover pointer-events-none"
-        autoPlay
-        loop
-        muted
-      >
-        <source src={videoFile} type="video/mp4" />
-      </video>
+    <div className=" h-auto lg:min-h-screen text-black relative inset-0 -z-10  w-full bg-bg-color [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#FAFC98_100%)] overflow-hidden">
+      
 
       <section className=" flex flex-col pt-20 h-auto lg:pt-0 lg:px-10 lg:min-h-screen text-center gap-5 justify-center items-center wrapper lg:max-w-[90%]">
         <div className="flex flex-col lg:gap-6 w-full relative">
